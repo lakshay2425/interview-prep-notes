@@ -28,4 +28,4 @@ The code is executed in two phases: <br>
 3. When the program executed, the global execution context is deleted and pop out of call stack. 
 
 <br>
-<img src="./execution-context-diagram.png" alt="Representation of Execution Context Diagram" >
+<img src="./Diagrams/execution-context-diagram.png" alt="Representation of Execution Context Diagram" >
