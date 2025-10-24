@@ -30,7 +30,7 @@ b(); // Output -> Hello World
 xyz(); // Reference Error: xyz is not defined
 ```
 
-### First Class Functions || First Class Citizen 
+### First Class Functions 
 The ability to pass function as argument to a function and return a function from a functions.
 ```
 function hello(param1){
