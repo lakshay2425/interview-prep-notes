@@ -69,3 +69,33 @@ for (var i = 1; i <= 5; i++) {
 The key points: closures capture bindings (references), and let in a for-loop creates fresh bindings per iteration, which is why the outputs differ.
 
 
+## Advantages and Disadvantages of Closures
+
+  ### Advantages
+
+1. **Data Privacy & Encapsulation**
+
+   * Closures allow variables to stay private and accessible only to specific functions, preventing accidental modification from outside.
+
+2. **Avoids Global Namespace Pollution**
+
+   * By keeping variables inside a closure, you reduce dependency on global scope, making the code cleaner and safer.
+
+3. **State Persistence**
+
+   * A closure “remembers” the environment in which it was created, so functions can maintain state between calls without using global variables.
+
+<br><hr>
+  ### ⚠️ Disadvantages 
+
+1. Increased Memory Usage
+
+     * Since closures retain references to outer scope variables, those variables are kept in memory longer than usual.
+
+2. Potential for Memory Leaks
+
+   * Unused closures or references can accidentally keep large objects in memory, leading to memory leaks if not managed properly.
+
+3. Harder to Debug & Maintain
+
+    * Because of scope chaining and variable retention, closures can make it more difficult to trace variable origins and debug complex logic.
