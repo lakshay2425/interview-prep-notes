@@ -27,6 +27,12 @@ const user = {
    2. If the value of this keyword is undefined or null, it will be replaced with globalObject only in non-strict mode 
 5. Arrow function execution context doesn't have its own this keyword. It takes from it lexical environment.
 
+```
+function Person(name){
+    this.name = name;
+} 
+// This is a function constructor which is used to create objects using baseClass and before ES6. After the introduction of ES6, it is strongly recommended not to use function constrcutor instead use class keyword to declare base class.
+```
 
 ```
 <button onClick="alert(this)">Click</button> // Value of this will be button HTML element
